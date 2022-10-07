@@ -26,7 +26,6 @@ void PrintArray (int[,] array)
         }
         // Console.WriteLine();
 }
-
 int Examination (int[,] pole)
 {
     for (int i = 0; i < 3; i++) // examination line
@@ -42,7 +41,6 @@ int Examination (int[,] pole)
         return 1;
         }
     }
-
     for (int i = 0; i < 3; i++) // examination column
     {
         if (pole[0,i] == pole[1,i] && pole[1,i] == pole[2,i] && pole[1,i] == 4)
@@ -56,7 +54,6 @@ int Examination (int[,] pole)
         return 1;
         }
     }
-
     if (pole[0, 0] + pole[1, 1] + pole[2, 2] == 12) // first dioganal
     {
         Console.WriteLine("Win player if O");
@@ -66,8 +63,7 @@ int Examination (int[,] pole)
     {
         Console.WriteLine("Win player if X");
         return 1;
-    }
-    
+    }   
     if (pole[0, 2] + pole[1, 1] + pole[2, 0] == 12) // second dioganal
     {
         Console.WriteLine("Win player if O");
@@ -77,11 +73,9 @@ int Examination (int[,] pole)
     {
         Console.WriteLine("Win player if X");
         return 1;
-    }
-    
+    }    
     return 0;
 }
-
 int end = 0;
 for (int i = 1; i < 10; i++)
 {
@@ -136,4 +130,3 @@ for (int i = 1; i < 10; i++)
     }
 }
 Console.WriteLine("GAME OVER");
-
